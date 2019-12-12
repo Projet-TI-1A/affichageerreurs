@@ -1,0 +1,35 @@
+
+#include <SFML/Graphics.hpp>
+#include <iostream>
+#include "toucher.h"
+#include "interface.h"
+
+using namespace std;
+using namespace sf;
+
+
+/********************************************************************************/
+
+/*sf::Clock clock; // démarre le chrono
+...
+sf::Time elapsed1 = clock.getElapsedTime();
+std::cout << elapsed1.asSeconds() << std::endl;
+clock.restart();*/
+
+void temps_total(int* t, RenderWindow& window)/*temps total de la simulation*/
+      int h, m, s;
+      h=t//3600;
+      m=(t%3600)//60;
+      s=(t%3600)%60;
+      
+      Font MyFont;
+if (!MyFont.LoadFromFile("arial.ttf", 50)) /*Police d'ecriture*/
+{
+    // Erreur
+}
+      score.setString("Temps total de l'opération : "s + std::to_string(h) "h " "s + std::to_string(m) "min " "s + std::to_string(s) "s ");
+
+    
+void pourcentage d'erreur(vector<point> tab_color, RenderWindow& window)/*temps total de la simulation*/
+{
+      vector.erase(vector.begin() + 4);
